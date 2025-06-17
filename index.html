@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Abdul Qadeer Medical Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #2f80ed;
+      --dark-color: #2c3e50;
+      --light-bg: #f9f9f9;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: var(--light-bg);
+      color: var(--dark-color);
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.pexels.com/photos/8460048/pexels-photo-8460048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center/cover;
+      height: 70vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 42px;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: var(--main-color);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #1c60c4;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 40px;
+      color: var(--main-color);
+    }
+    .about, .timings, .contact {
+      text-align: center;
+      font-size: 18px;
+      color: #555;
+      line-height: 1.8;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .service-card {
+      background-color: white;
+      padding: 25px;
+      width: 250px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .service-card h3 {
+      color: var(--main-color);
+      margin-bottom: 10px;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: var(--dark-color);
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 16px;
+    }
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+      .service-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Dr. Abdul Qadeer Medical Store</h1>
+    <p>Serving Balkassar for Generations | Now Managed by Bilal</p>
+    <a href="https://wa.me/923011234567" target="_blank" class="button">💬 Chat on WhatsApp</a>
+  </header>
+
+  <!-- About Section -->
+  <section>
+    <h2 class="section-title">About the Clinic</h2>
+    <p class="about">
+      Founded decades ago by the late Dr. Abdul Qadeer, this clinic and medical store has been a trusted name in Balkassar for generations.
+      Known for providing relief to daily health problems like fever, flu, cough, pain, and blood pressure issues, the clinic became a part of people's daily life.
+    </p>
+    <p class="about" style="margin-top: 20px;">
+      Today, the clinic is run with the same care and dedication by his son <strong>Bilal</strong>, who continues to help the community with basic checkups and trusted advice at affordable prices.
+      Located in the heart of <strong>Doctor Qadeer Street</strong>, the shop is open almost all day and remains a go-to place for local health needs.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section>
+    <h2 class="section-title">Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Fever & Flu</h3>
+        <p>Quick relief for seasonal illnesses.</p>
+      </div>
+      <div class="service-card">
+        <h3>Blood Pressure</h3>
+        <p>Check and monitor your BP levels.</p>
+      </div>
+      <div class="service-card">
+        <h3>Body Pain</h3>
+        <p>Pain relief guidance and medication.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cough & Cold</h3>
+        <p>Effective remedies and treatment.</p>
+      </div>
+      <div class="service-card">
+        <h3>Basic Checkups</h3>
+        <p>Everyday health guidance and advice.</p>
+      </div>
+      <div class="service-card">
+        <h3>Medicines</h3>
+        <p>Affordable, trusted daily-use medicines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timings Section -->
+  <section>
+    <h2 class="section-title">Clinic Timings</h2>
+    <p class="timings">
+      🕘 Open All Day (Morning to Late Evening)<br>
+      📍 Doctor Qadeer Street, Balkassar
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <h2 class="section-title">Contact & Location</h2>
+    <p class="contact">
+      📞 Phone: 0301-1234567<br>
+      💬 WhatsApp: <a href="https://wa.me/923011234567">Click to Chat</a><br>
+      📍 Address: Doctor Qadeer Street, Balkassar
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy" allowfullscreen></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Dr. Abdul Qadeer Medical Store, Balkassar. All rights reserved.
+  </footer>
+
+</body>
+</html>
